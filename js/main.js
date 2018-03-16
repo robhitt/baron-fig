@@ -3,7 +3,6 @@
 window.addEventListener('load', app);
 
 function app() {
-
   // MOBILE NAV
   const mobileNav = document.querySelector('.header__left-content');
   mobileNav.addEventListener('click', toggleMobileNav) ;
