@@ -81,12 +81,14 @@ main {
   overflow-x: hidden;
 }
 
-.main__carousel--slider {
-  transition: 3s;
-}
-
 .main__carousel--wrap {
   position: relative;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+.main__carousel--slider {
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 
 .main__carousel-slide {
@@ -94,6 +96,8 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   height: 100%; 
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 
 .carousel-slide-1 {
@@ -110,6 +114,12 @@ main {
 
 .carousel-slide-4 {
   background-image: url('../images/baron-fig4.jpg');
+}
+
+@keyframes fadeIn {
+  to: { 
+    opacity: 1
+  }
 }
 
 .main__carousel--arrow {
