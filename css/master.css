@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/********** HEADER CONTENT **********/
+.header__container--style {
+  height: 80px;
+  background-color: rgb(48, 52, 64);
+}
+
+.header__left-content {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  margin-left: 30px;
+  width: calc(30% - 30px);
+}
+
+.header__left-content--logo {
+  font-size: 22px;
+}
+
+.header__left-content--asterisks {
+  font-size: 22px;
+  color: rgb(224, 74, 85)
+}
+
+.header__right-content {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  width: calc(70% - 20px);
+  display: inline-block;
+  line-height: 27px;
+}
+
+.header__right-content--menu-item {
+  color: #fff;
+  display: inline-block;
+  margin-right: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 0;
+  background-color: rgb(48, 52, 64);
+  text-transform: uppercase;
+}
+
+.header__right-content--menu-item:hover {
+  color: rgb(224, 74, 85)
+}
+
+.header__right-content--active {
+  color: rgb(224, 74, 85)
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/********** CAROUSEL CONTENT **********/
+.main__carousel--wrap,
+.main__carousel--slider {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: pink;
+  overflow-x: hidden;
+}
+
+.main__carousel--wrap {
+  position: relative;
+}
+
+.main__carousel-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.carousel-slide-1 {
+  background-image: url('../images/baron-fig1.jpg');
+}
+
+.carousel-slide-2 {
+  background-image: url('../images/baron-fig2.jpg');
+}
+
+.carousel-slide-3 {
+  background-image: url('../images/baron-fig3.jpg');
+}
+
+.carousel-slide-4 {
+  background-image: url('../images/baron-fig4.jpg');
+}
+
+.main__carousel--arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: calc(100vh - 100px);
+  width: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+}
+
+.main__carousel--prev {
+  background-image: url("https://cdn.shopify.com/s/files/1/0543/1257/t/30/assets/gallery_left.png");
+  left: 10px;
+}
+
+.main__carousel--next {
+  background-image: url("https://cdn.shopify.com/s/files/1/0543/1257/t/30/assets/gallery_right.png");
+  right: 10px;
+}
+
+/* .main-container {
+  background-color: rgb(242, 242, 242);
+}
+
+.main__carousel--slider {  
+  overflow: hidden;
+  height: calc(100vh - 80px);
+  width: 100%;
+  position: relative;
+  
+}
+
+.main__carousel-image 
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-img-1 {
+  background: url("../images/baron-fig1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.carousel-img-2 {
+  background: url("../images/baron-fig2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.carousel-img-3 {
+  background: url("../images/baron-fig3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.carousel-img-4 {
+  background: url("../images/baron-fig4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+/********** FOOTER CONTENT **********/
+.footer__container,
+.footer__title {
+  background-color: rgb(242, 242, 242);
+}
+
+.footer__container {
+  padding: 35px 0;
+}
+
+.footer__title {
+  margin: 0 20px 20px 30px;  
+  font-weight: 700;
+  color: rgb(96, 102, 136);
+}
+
+.footer__description {
+  margin: 0 20px 30px 30px;  
+  color: rgb(161, 163, 188);
+}
+
+.footer__services--container {
+  font-size: 0;
+  margin: 0 20px 20px 30px;  
+}
+
+.footer__services--cell {
+  color: rgb(161, 163, 188);
+  width: calc(100% / 3);
+  display: inline-block;
+  font-size: 0;
+  vertical-align: top;
+}
+
+.footer__services--cell:nth-child(n + 4) {
+  margin-top: 15px;
+}
+
+.footer__icon {
+  width: 25%;
+  display: inline-block;
+}
+
+.footer__icon-img {
+  max-width: 100%;
+}
+
+.footer__services--description {
+  width: 75%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px 0 10px;
+}
+
+.footer__services--header {
+  font-size: 20px;
+  color: rgb(109, 114, 130);
+  font-weight: 800;
+}
+
+.footer__services--copy {
+  margin-top: 10px;
+  font-size: 16px;
+  color: rgb(144, 146, 154);
+}
+
+@media only screen and (max-width: 767px) {
+  /********** HEADER CONTENT MOBILE **********/
+  .header__container--style {
+    height: 57px;
+  }
+
+  .header__left-content {
+    top: 0;
+    transform: translateY(0%);
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .header__left-content--logo,
+  .header__left-content--asterisks {
+    font-size: 30px;
+  }
+
+  .header__right-content {
+    color: #fff;
+    position: relative;
+    display: block;
+    line-height: 27px;
+    text-align: center;
+    top: 56px;
+    width: 100%;
+    position: absolute;
+    transform: translateY(0%);
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .header__right-content--menu-item {
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(48, 52, 64);
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 15px 0;
+    padding-right: 11px;
+    width: 100%;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: block;
+  }
+
+  .button-icon {
+    border: 0;
+    background-color: rgb(48, 52, 64);
+  }
+
+  .hamburger,
+  .close-button {
+    width: 30px;
+    height: 30px;
+    font-family: "Material Icons";
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+  }
+
+  .hidden-nav-icon {
+    display: none;
+  }
+
+  /********** CAROUSEL CONTENT MOBILE **********/
+  .main__carousel--wrap,
+  .main__carousel--slider  {
+    height: calc(100vh - 57px);
+  }
+
+  /********** FOOTER CONTENT MOBILE **********/
+  .footer__services--cell {
+    width: 100%;
+  }
+
+  .footer__services--cell {
+    margin-top: 20px;
+  }
+}
