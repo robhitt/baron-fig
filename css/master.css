@@ -68,13 +68,21 @@ body {
   display: none;
 }
 
-/********** CAROUSEL CONTENT **********/
+/********** MAIN CAROUSEL CONTENT **********/
+main {
+  background-color: rgb(242, 242, 242);
+}
+
 .main__carousel--wrap,
 .main__carousel--slider {
   width: 100%;
-  height: calc(100vh - 80px);
-  background-color: pink;
+  height: calc(80vh - 80px);
+  background-color: ;
   overflow-x: hidden;
+}
+
+.main__carousel--slider {
+  transition: 3s;
 }
 
 .main__carousel--wrap {
@@ -85,7 +93,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100%; 
 }
 
 .carousel-slide-1 {
@@ -109,65 +117,29 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: calc(100vh - 100px);
-  width: 30px;
+  height: 40px;
+  width: 40px;
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
   border: 0;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.main__carousel--arrow:hover {
+  background-color: rgba(255, 255, 255, .5);
 }
 
 .main__carousel--prev {
   background-image: url("https://cdn.shopify.com/s/files/1/0543/1257/t/30/assets/gallery_left.png");
-  left: 10px;
+  left: 20px;
 }
 
 .main__carousel--next {
   background-image: url("https://cdn.shopify.com/s/files/1/0543/1257/t/30/assets/gallery_right.png");
-  right: 10px;
+  right: 20px;
 }
-
-/* .main-container {
-  background-color: rgb(242, 242, 242);
-}
-
-.main__carousel--slider {  
-  overflow: hidden;
-  height: calc(100vh - 80px);
-  width: 100%;
-  position: relative;
-  
-}
-
-.main__carousel-image 
-  height: 100%;
-  width: 100%;
-}
-
-.carousel-img-1 {
-  background: url("../images/baron-fig1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.carousel-img-2 {
-  background: url("../images/baron-fig2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.carousel-img-3 {
-  background: url("../images/baron-fig3.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.carousel-img-4 {
-  background: url("../images/baron-fig4.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 
 /********** FOOTER CONTENT **********/
 .footer__container,
@@ -314,7 +286,7 @@ body {
   /********** CAROUSEL CONTENT MOBILE **********/
   .main__carousel--wrap,
   .main__carousel--slider  {
-    height: calc(100vh - 57px);
+    height: calc(80vh - 57px);
   }
 
   /********** FOOTER CONTENT MOBILE **********/

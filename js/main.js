@@ -41,8 +41,6 @@ function app() {
 
   // Initialize carousel
   function startSlide() {
-    console.log(sliderImages.length);
-    
     resetSlides();
     sliderImages[0].style.display = 'block';
   }
@@ -92,17 +90,3 @@ function app() {
 
   startSlide();
 }
-
-
-
-// const url = "ADD_URL_ENDPOINT_HERE";
-  // fetch(url, {
-  //     method: "GET"
-  //   })
-  //   .then(response => response.json())
-  //   .then(response => renderPage(response))
-  //   .catch(err => console.log(err));
-
-// function renderPage(response) {
-//   console.log("Hello, World!");
-// }
